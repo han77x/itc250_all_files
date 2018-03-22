@@ -40,6 +40,7 @@ $config->titleTag = $PageTitle;
 get_header(); # defaults to header_inc.php
 ?>
 <h2><?=THIS_PAGE;?></h2>
+
 <p>This is test page for the response object.  (SurveySez version 2)</p>
 <p>It features the new Response & Choice Objects</p>
 <p>It is a model intended to be changed to response_view.php, with the ID of a response to be passed in via the QueryString</p>

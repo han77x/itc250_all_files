@@ -46,7 +46,7 @@ get_header(); #defaults to theme header or header_inc.php
 <p><a href="<?=VIRTUAL_PATH;?>demo/demo_list_pager.php" target="_blank">demo_list_pager</a>: A &quot;muffin&quot; example that incorporates the Pager class into a  list/view application. Best starting point for a List/View app </p>
 <p><a href="<?=VIRTUAL_PATH;?>demo/demo_add.php" target="_blank">demo_add</a>: A postback switch based application for adding new records to the Customers table.</p>
 <p><a href="<?=VIRTUAL_PATH;?>demo/demo_edit.php" target="_blank">demo_edit</a>: A postback switch based application for editing existing records in the Customers table</p>
-<p><a href="<?=VIRTUAL_PATH;?>foodtruck/index.php" target="_blank">Food Truck</a>: Food truck assignment</p>
+<p><a href="<?=VIRTUAL_PATH;?>foodtruck/index.php" target="_blank">FOOD TRUCK</a>: Food truck assignment</p>
 <p>&nbsp; </p>
 <?php
 
