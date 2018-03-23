@@ -12,15 +12,15 @@
  */
 
 # '../' works for a sub-folder.  use './' for the root  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials 
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials 
  
 # SQL statement
 $sql = "select MuffinName, MuffinID, Price from test_Muffins";
 
-#Fills <title> tag. If left empty will default to $PageTitle in config_inc.php  
+#Fills <title> tag. If left empty will default to $PageTitle in config.php  
 $config->titleTag = 'Muffins made with love & PHP in Seattle';
 
-#Fills <meta> tags.  Currently we're adding to the existing meta tags in config_inc.php
+#Fills <meta> tags.  Currently we're adding to the existing meta tags in config.php
 $config->metaDescription = 'Seattle Central\'s ITC280 Class Muffins are made with pure PHP! ' . $config->metaDescription;
 $config->metaKeywords = 'Muffins,PHP,Fun,Bran,Regular,Regular Expressions,'. $config->metaKeywords;
 

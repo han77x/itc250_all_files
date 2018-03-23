@@ -11,11 +11,11 @@
  * @version 2.014 2012/06/09
  * @link http://www.newmanix.com/
  * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see config_inc.php 
+ * @see config.php 
  * @todo none
  */
  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
 
 $redirect_to_login = TRUE; #if true, will redirect to admin login page, else redirect to main site index
 

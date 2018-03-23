@@ -58,7 +58,7 @@
  */
  
 # '../' works for a sub-folder.  use './' for the root 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials 
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials 
 
 # For each customer/domain, get a key from http://www.google.com/recaptcha/whyrecaptcha (DON'T LET A CUSTOMER USE YOUR KEY) 
 # zephir ONLY reCAPTCHA keys are below:
@@ -72,7 +72,7 @@ $toName = "VALUED CLIENT"; //place your client's name here
 $website = "DEMO FORM";  //place NAME of your client's website/form here, ie: ITC280 Contact, ITC280 Registration, etc.
 $sendEmail = FALSE; //if true, will send an email, otherwise just show user data.
 
-$config->titleTag = smartTitle(); #Fills <title> tag. If left empty will fallback to $config->titleTag in config_inc.php
+$config->titleTag = smartTitle(); #Fills <title> tag. If left empty will fallback to $config->titleTag in config.php
 $config->metaDescription = smartTitle() . ' - ' . $config->metaDescription;
   
 /*

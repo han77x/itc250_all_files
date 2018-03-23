@@ -22,7 +22,7 @@
  */
 
 # '../' works for a sub-folder.  use './' for the root  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials 
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials 
 
 /*$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
@@ -54,10 +54,10 @@ date_format(s.DateAdded, '%W %D %M %Y %H:%i') 'DateAdded' from "
 ";
 */
 
-#Fills <title> tag. If left empty will default to $PageTitle in config_inc.php  
+#Fills <title> tag. If left empty will default to $PageTitle in config.php  
 $config->titleTag = 'Feeds made with love & PHP in Seattle';
 
-#Fills <meta> tags.  Currently we're adding to the existing meta tags in config_inc.php
+#Fills <meta> tags.  Currently we're adding to the existing meta tags in config.php
 $config->metaDescription = 'Seattle Central\'s ITC250 Class Feeds are made with pure PHP! ' . $config->metaDescription;
 $config->metaKeywords = 'RSS Feeds,PHP,Fun,Regular,Regular Expressions,'. $config->metaKeywords;
 

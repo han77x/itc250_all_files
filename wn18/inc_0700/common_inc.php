@@ -457,7 +457,7 @@ function __autoload($class_name)
  *
  * If no parameter passed will attempt to retrieve matching 
  * header/footer files based on name of 'theme' declared inside 
- * config_inc.php:
+ * config.php:
  *
  * <code>
  * $config->theme = "TwoTone";
@@ -768,7 +768,7 @@ function getENUM($table,$column)
  * allows creation of links from associative array of link data and 
  * HTML prefix & suffix to each link
  *
- * Link arrays created in config_inc.php, and makeLinks() function called in 
+ * Link arrays created in config.php, and makeLinks() function called in 
  * header or footer include as required.
  *
  * Allows different HTML treatments per header/footer combo while containing 

@@ -35,7 +35,7 @@
 		<ul id="navlist">
 			<?=$config->sidebar1; ?>	
 			<?php 
-				echo makeLinks($config->nav1,'<li>','</li>'); #link arrays are created in config_inc.php file
+				echo makeLinks($config->nav1,'<li>','</li>'); #link arrays are created in config.php file
 			?>	
 			<li
 				<p><strong>A tiny service announcement.</strong><br />

@@ -7,7 +7,7 @@
  * 
  * When placed in the APPLICATION ROOT (Where you want this application to reside) inside 
  * the WEB ROOT, this file will attempt to expose the PHYSICAL_PATH & VIRTUAL_PATH	data that 
- * can be used for the constants by those names in config_inc.php
+ * can be used for the constants by those names in config.php
  *
  * It would be dangerous to leave this file in the web root, so remember to remove it, after 
  * you are done determining your paths.
@@ -21,7 +21,7 @@
  * @version 2.091 2011/06/17
  * @link http://www.newmanix.com/ 
  * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see config_inc.php
+ * @see config.php
  * @see index_new.php 
  * @todo none
  */
@@ -42,7 +42,7 @@ virtual = location.href.substring(0,location.href.lastIndexOf("/") + 1);
 <body>
 <p><b>config_test.php</b><strong>/index.php</strong></p>
 <p>This file will attempt to expose the <strong>PHYSICAL_PATH</strong> & <strong>VIRTUAL_PATH</strong> to your <strong>APPLICATION ROOT</strong> that 
-can be used to fill in the constants by those names required in <strong>config_inc.php</strong> (located initially in the <strong>inc_0700</strong> folder) </p>
+can be used to fill in the constants by those names required in <strong>config.php</strong> (located initially in the <strong>inc_0700</strong> folder) </p>
 <p>
   <?php
 //identify physical & virtual paths:
@@ -59,11 +59,11 @@ $physical2 = substr($physical2,0,strlen($physical2) - $fileLength);
 if($physical == $physical2)
 {#they match.  Yowza!
 	echo 'Likely <b>PHYSICAL_PATH</b> (verified 2 ways, via SCRIPT_FILENAME and __PATH__): <br /><span class="green">' . $physical . '</span><br />';
-	echo 'Use the above path (in green) as the <b>PHYSICAL_PATH</b> constant inside <b>config_inc.php</b>.<br />';
+	echo 'Use the above path (in green) as the <b>PHYSICAL_PATH</b> constant inside <b>config.php</b>.<br />';
 }else{#different. - try each!
 	echo 'Likely <b>PHYSICAL_PATH</b> (via SCRIPT_FILENAME): <span class="green">' . $physical . '</span><br />';
 	echo 'Alternative (possible) <b>PHYSICAL_PATH</b> (via __PATH__): <span class="green">' . $physical2 . '</span><br />';
-	echo 'You may need to try <b>both</b> of the above paths above (in green) as the <b>PHYSICAL_PATH</b> constant inside <b>config_inc.php</b>';
+	echo 'You may need to try <b>both</b> of the above paths above (in green) as the <b>PHYSICAL_PATH</b> constant inside <b>config.php</b>';
 }
 echo '<br />';
 ?>
@@ -71,10 +71,10 @@ echo '<br />';
   <span class="blue">
   <script type="text/javascript">document.write(virtual);</script>
   </span><br />
-Use the above path (in blue) as the <b>VIRTUAL_PATH</b> constant inside <b>config_inc.php</b>.</p>
-<p><strong>After Editing config_inc.php:</strong> Once you have edited <strong>config_inc.php</strong>, come back to this page and try the following link:</p>
+Use the above path (in blue) as the <b>VIRTUAL_PATH</b> constant inside <b>config.php</b>.</p>
+<p><strong>After Editing config.php:</strong> Once you have edited <strong>config.php</strong>, come back to this page and try the following link:</p>
 <p><a href="index_new.php">index_new.php</a></p>
-<p>If the page shows a <strong>complete</strong> page with a header and footer, likely your <strong>config_inc.php</strong> file was edited properly! If you see error messages, read the error message and prepare to re-edit your <strong>config_inc.php</strong> file.</p>
+<p>If the page shows a <strong>complete</strong> page with a header and footer, likely your <strong>config.php</strong> file was edited properly! If you see error messages, read the error message and prepare to re-edit your <strong>config.php</strong> file.</p>
 <p><strong>Once All is Working: </strong>Once the above link shows a complete error free page, rename the <strong>index_new.php</strong> file to<strong> index.php</strong>. That will replace <strong>this</strong> file as the index page for your application. A backup of this file is named <strong>config_test.php</strong>, and its in the application root as well (same folder). <strong>This file should be moved from the web space into a safe location, unreachable via the web. </strong></p>
 <p><strong>Error Messages:</strong> This file also attempts to show you  whether or not errors are currently visible in this space. If errors are not currently visible, this page will offer advice on what to do next (below). </p>
 <?php
@@ -129,7 +129,7 @@ if(ini_get('log_errors')!='' && ini_get('log_errors') == 1)
 			echo 'We <b>were successful</b> at setting an error log path manually.  This can be done by you by ';
 			echo 'using <b>ini_set("error_log","path/to/error/log/file")</b> in which you identify an existing physical path to an error file.<br />';
 			echo 'The file must be writeable and is best kept <b>outside</b> the web root, or at least set to <b>0700</b> to keep from being publicly viewable.';
-			echo ' You may <b>not</b> need to do this if you use the <b>config_inc.php</b> file handles error logging.<br />';
+			echo ' You may <b>not</b> need to do this if you use the <b>config.php</b> file handles error logging.<br />';
 		}
 	}else{
 		echo 'Default error logging path<b>' . ini_get('error_log') . '</b><br />';
@@ -141,7 +141,7 @@ if(ini_get('log_errors')!='' && ini_get('log_errors') == 1)
 			echo 'Able to change <b>error log path</b> via <b>ini_set()</b>: <span class="green">TRUE</span><br />';
 			echo 'We <b>were successful</b> at changing the error log path manually.  This can be done by you by ';
 			echo 'using <b>ini_set("error_log","path/to/error/log/file")</b> in which you identify an existing physical path to an error file.<br />';
-			echo ' You may <b>not</b> need to do this as the <b>config_inc.php</b> file handles error logging.<br />';
+			echo ' You may <b>not</b> need to do this as the <b>config.php</b> file handles error logging.<br />';
 		}else{#unable to change error log path
 			echo 'Able to change the <b>error log path</b> via <b>ini_set()</b>: <span class="red">FALSE</span><br />';
 			echo 'We attempted to change the error_log path and <b>failed</b> via <b>ini_set()</b>.<br />';

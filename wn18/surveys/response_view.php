@@ -16,7 +16,7 @@
  * @see Choice.php
  */
 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
 spl_autoload_register('MyAutoLoader::NamespaceLoader');//required to load SurveySez namespace objects
 
 if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystring

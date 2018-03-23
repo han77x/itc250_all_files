@@ -17,8 +17,8 @@
  * @todo none
  */
 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
-$config->titleTag = 'Admin Dashboard'; #Fills <title> tag. If left empty will fallback to $config->titleTag in config_inc.php
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
+$config->titleTag = 'Admin Dashboard'; #Fills <title> tag. If left empty will fallback to $config->titleTag in config.php
 $config->metaRobots = 'no index, no follow';#never index admin pages  
 $server = 'localhost'; #CHANGE TO YOUR MYSQL HOST!!
 $username='horsey01'; #CHANGE TO YOUR MYSQL USERNAME!!

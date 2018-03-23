@@ -8,15 +8,15 @@
  * @version 2.09 2011/05/09
  * @link http://www.newmanix.com/
  * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see config_inc.php  
+ * @see config.php  
  * @see header_inc.php
  * @see footer_inc.php 
  * @todo none
  */
 # '../' works for a sub-folder.  use './' for the root
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
 
-$config->titleTag = smartTitle(); #Fills <title> tag. If left empty will fallback to $config->titleTag in config_inc.php
+$config->titleTag = smartTitle(); #Fills <title> tag. If left empty will fallback to $config->titleTag in config.php
 $config->metaDescription = smartTitle() . ' - ' . $config->metaDescription; 
 /*
 $config->metaDescription = 'Web Database ITC281 class website.'; #Fills <meta> tags.

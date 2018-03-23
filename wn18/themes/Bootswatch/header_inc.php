@@ -29,7 +29,7 @@ include 'bootswatch_functions.php';
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
 			<?php 
-				echo bootswatchLinks($config->nav1,'<li>','</li>','<li class="active">'); #link arrays are created in config_inc.php file - see bootswatch_functions.php
+				echo bootswatchLinks($config->nav1,'<li>','</li>','<li class="active">'); #link arrays are created in config.php file - see bootswatch_functions.php
 			?>
           </ul>
 			<?php

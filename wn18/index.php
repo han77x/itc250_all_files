@@ -7,13 +7,13 @@
  * @version 2.091 2011/06/17
  * @link http://www.newmanix.com/
  * @license https://www.apache.org/licenses/LICENSE-2.0
- * @see config_inc.php 
+ * @see config.php 
  * @todo none
  */
 
 
-require 'inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
-$config->titleTag = THIS_PAGE; #Fills <title> tag. If left empty will fallback to $config->titleTag in config_inc.php
+require 'inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
+$config->titleTag = THIS_PAGE; #Fills <title> tag. If left empty will fallback to $config->titleTag in config.php
 
 //below you can add a link to a unique page to the existing nav as follows
 //$config->nav1 = array("aboutus.php"=>"About Us") + $config->nav1; 

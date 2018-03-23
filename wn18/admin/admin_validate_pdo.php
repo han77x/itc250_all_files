@@ -15,7 +15,7 @@
  * @todo none
  */
 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials  
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials  
 
 if (isset($_POST['em']) && isset($_POST['pw'])) 
 {//if POST is set, prepare to process form data

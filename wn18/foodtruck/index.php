@@ -21,7 +21,7 @@
  */
 
 # '../' works for a sub-folder.  use './' for the root  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
 require 'Item.class.php'; #This class enables the ability to store data from the order in an object
 require 'common.php'; #Critical functionality, particularly the showForm() & showData() functions 
 

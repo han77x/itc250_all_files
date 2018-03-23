@@ -13,7 +13,7 @@
  * @todo none
  */
 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials 
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials 
 
 startSession(); //wrapper for session_start()
 $_SESSION = array();# Setting a session to an empty array safely clears all data

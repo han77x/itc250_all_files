@@ -17,8 +17,8 @@
  * $config->adminAdd.php & admin_reset.php.  Please change this path in these files until this is fixed.
  */
 
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
-$config->titleTag = 'Add Administrator'; #Fills <title> tag. If left empty will fallback to $config->titleTag in config_inc.php
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
+$config->titleTag = 'Add Administrator'; #Fills <title> tag. If left empty will fallback to $config->titleTag in config.php
 $config->metaRobots = 'no index, no follow';#never index admin pages  
 
 //END CONFIG AREA ----------------------------------------------------------

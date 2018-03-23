@@ -24,7 +24,7 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
 			<?php 
-				echo boostrapLinks($config->nav1,'<li>','</li>','<li class="active">'); #link arrays are created in config_inc.php file
+				echo boostrapLinks($config->nav1,'<li>','</li>','<li class="active">'); #link arrays are created in config.php file
 			?>
           </ul>
           <ul class="nav navbar-nav navbar-right">

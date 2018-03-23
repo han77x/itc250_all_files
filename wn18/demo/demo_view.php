@@ -12,7 +12,7 @@
  */
 
 # '../' works for a sub-folder.  use './' for the root  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require '../inc_0700/config.php'; #provides configuration, pathing, error handling, db credentials
  
 # check variable of item passed in - if invalid data, forcibly redirect back to demo_list.php page
 if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystring
@@ -48,7 +48,7 @@ if(mysqli_num_rows($result) > 0)
 if($foundRecord)
 {#only load data if record found
 	$config->titleTag = $MuffinName . " muffins made with PHP & love!"; #overwrite PageTitle with Muffin info!
-	#Fills <meta> tags.  Currently we're adding to the existing meta tags in config_inc.php
+	#Fills <meta> tags.  Currently we're adding to the existing meta tags in config.php
 	$config->metaDescription = $MetaDescription . ' Seattle Central\'s ITC280 Class Muffins are made with pure PHP! ' . $config->metaDescription;
 	$config->metaKeywords = $MetaKeywords . ',Muffins,PHP,Fun,Bran,Regular,Regular Expressions,'. $config->metaKeywords;
 }

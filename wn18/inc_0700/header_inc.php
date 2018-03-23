@@ -39,7 +39,7 @@ echo "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?".">\n"; //xml uses ?, so we
       	<td width="175" valign="top">
 			<p align="center"><? echo $config->sidebar1; ?></p>
 			<?php
-				echo makeLinks($config->nav1,'<p align="center">','</p>'); #link arrays are created in config_inc.php file
+				echo makeLinks($config->nav1,'<p align="center">','</p>'); #link arrays are created in config.php file
 			?>
 		</td>
             <!-- change guts/identity area color here -->
